@@ -12,12 +12,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Virtual Airlines Manager</title>
+	<title>Vacation Air</title>
 	<meta charset="utf-8">
 	<meta name="keywords"
 	      content="vam, virtual airlines manager , va , ivao, vatsim , airlines manager, prepar3d, aerosoft, pmdg,virtual pilot, piloto virtual, open source,xplane, flight simulator, flight simulation, flight, flying, fsx, fs9, flight simulator x, flight simulator 2004, simulators, simulator, simulation, flight enthusiasts, fsacars, fskeeper"/>
 	<meta name="description"
-	      content="VAM Virtual Airlines Manager is  free, open source web system for flight simulation enthusiasts, allowing them to create their own virtual airlines as a real one. Full airlines administration."/>
+	      content="VAE is a Virtual Airline based on Rome, created by the YouTuber Piloto Experto"/>
 	<meta name="author" content="Alejandro Garcia">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel=”author” href=”https://plus.google.com/u/0/108665243705425046932/“ title="Virtual Airlines Manager on Google+" />
@@ -59,7 +59,7 @@
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="./index.php">Virtual Airlines Manager</a>
+			<a class="navbar-brand" href="./index.php">Vacation Air</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
@@ -70,7 +70,7 @@
 						<li><a href="./index.php?page=staff"><i class="fa fa-user-o fa-fw"></i> <?php echo STAFF; ?></a></li>
 						<li><a href="./index.php?page=rules"><i class="fa fa-file-text-o fa-fw"></i> <?php echo RULES; ?></a></li>
 						<li><a href="./index.php?page=school"><i class="fa fa-graduation-cap fa-fw"></i> <?php echo SCHOOL; ?></a></li>
-						<li><a href="#"><i class="fa fa-comments-o fa-fw"></i> <?php echo FORUM; ?></a></li>
+						<li><a href="https://vacationairva.com/vae/index.php"><i class="fa fa-comments-o fa-fw"></i> <?php echo FORUM; ?></a></li>
 						<li><a href="./index.php?page=pilot_register"><i class="fa fa-handshake-o fa-fw"></i> <?php echo REGISTER; ?></a></li>
 					</ul>
 				</li>
@@ -86,6 +86,19 @@
 						<li><a href="./index.php?page=va_global_financial_report"><i class="fa fa-dollar fa-fw"></i> <?php echo GLOBAL_FINANCES; ?></a></li>
 					</ul>
 				</li>
+				<!-- Aquí se inserta el nuevo menú -->
+				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-sliders fa-fw"></i> <?php echo Tools; ?>
+						<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="./index_vam_op.php?page=flightplan"><i class="fa fa-star fa-fw"></i> <?php echo "Flight Plan Creation"; ?></a></li>
+						<li><a href="./index_vam_op.php?page=metartaf"><i class="fa fa-star fa-fw"></i> <?php echo "METAR"; ?></a></li>
+						<li><a href="https://fpl.ivao.aero/"><i class="fa fa-star fa-fw"></i> <?php echo "IVAO File Flight Plan"; ?></a></li>
+						<li><a href="https://my.vatsim.net/pilots/flightplan"><i class="fa fa-star fa-fw"></i> <?php echo "VATSIM File Flight Plan"; ?></a></li>
+						<li><a href="https://webeye.ivao.aero/"><i class="fa fa-star fa-fw"></i> <?php echo "WebEye"; ?></a></li>
+						<li><a href="https://simaware.ca/"><i class="fa fa-star fa-fw"></i> <?php echo "SimAware"; ?></a></li>
+					</ul>
+				</li>
+				<!-- Fin del nuevo menú -->
 				<li><a href="./index.php?page=pilots_public"><i class="fa fa-users fa-fw"></i> <?php echo PILOTS; ?></a></li>
 				<li><a href="./index.php?page=stats"><i class="fa fa-area-chart fa-fw"></i> <?php echo STATS; ?></a></li>
 				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-language fa-fw"></i> <?php echo LANGUAGES; ?><span class="caret"></span></a>
@@ -94,6 +107,7 @@
 					</ul>
 				</li>
 			</ul>
+
 			<?php if ($user_logged==0) {
 				?>
 				<ul class="nav navbar-nav navbar-right">
@@ -180,37 +194,58 @@
 					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
 					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="6"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="7"></li>
 				</ol>
 				<!-- Wrapper for slides -->
 				<div class="carousel-inner">
 					<div class="item active">
 						<img src="./images/slider/1.jpg" alt="...">
 						<div class="carousel-caption">
-							<h3>Virtual Airlines Manager</h3>
+							<h3>Vacation Air</h3>
 						</div>
 					</div>
 					<div class="item">
-						<img src="./images/slider/2.jpg" alt="...">
+						<img src="./images/slider/7.jpg" alt="...">
 						<div class="carousel-caption">
-							<h3>Virtual Airlines Manager</h3>
+							<h3>Vacation Air</h3>
 						</div>
 					</div>
 					<div class="item">
 						<img src="./images/slider/3.jpg" alt="...">
 						<div class="carousel-caption">
-							<h3>Virtual Airlines Manager</h3>
+							<h3>Vacation Air</h3>
 						</div>
 					</div>
 					<div class="item">
 						<img src="./images/slider/4.jpg" alt="...">
 						<div class="carousel-caption">
-							<h3>Virtual Airlines Manager</h3>
+							<h3>Vacation Air</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/slider/8.jpg" alt="...">
+						<div class="carousel-caption">
+							<h3>Vacation Air</h3>
 						</div>
 					</div>
 					<div class="item">
 						<img src="./images/slider/5.jpg" alt="...">
 						<div class="carousel-caption">
-							<h3>Virtual Airlines Manager</h3>
+							<h3>Vacation Air</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/slider/6.jpg" alt="...">
+						<div class="carousel-caption">
+							<h3>Vacation Air</h3>
+						</div>
+					</div>
+					<div class="item">
+						<img src="./images/slider/2.jpg" alt="...">
+						<div class="carousel-caption">
+							<h3>Vacation Air</h3>
 						</div>
 					</div>
 				</div>

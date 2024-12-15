@@ -75,10 +75,25 @@
 						<li><a href="./index_vam_op.php?page=school"><i class="fa fa-graduation-cap fa-fw"></i> <?php echo SCHOOL; ?></a></li>
 						<li><a href="#"><i class="fa fa-comments-o fa-fw"></i> <?php echo FORUM; ?></a></li>
 					</ul>
-				</li>
-				<li><a href="./index_vam_op.php?page=pilot_options"><i class="fa fa-gears fa-fw"></i> <?php echo MENU; ?></a></li>
-				<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-sliders fa-fw"></i> <?php echo OPERATIONS; ?>
-						<span class="caret"></span></a>
+        </li>
+        <li><a href="./index_vam_op.php?page=pilot_options"><i class="fa fa-cogs"></i> Menu</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-tools"></i> Tools <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+              <li><a href="./index_vam_op.php?page=flightplan"><i class="fa fa-star"></i> Flight Plan Creation</a></li>
+              <li><a href="./index_vam_op.php?page=metartaf"><i class="fa fa-star"></i> METAR</a></li>
+              <li><a href="https://fpl.ivao.aero/"><i class="fa fa-star"></i> IVAO File Flight Plan</a></li>
+              <li><a href="https://my.vatsim.net/pilots/flightplan"><i class="fa fa-star"></i> VATSIM File Flight Plan</a></li>
+              <li><a href="https://webeye.ivao.aero/"><i class="fa fa-star"></i> WebEye</a></li>
+              <li><a href="https://simaware.ca/"><i class="fa fa-star"></i> SimAware</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <i class="fa fa-sliders-h"></i> Operations <span class="caret"></span>
+          </a>
 					<ul class="dropdown-menu">
 					<li><a href="./index_vam_op.php?page=fleet_public"><i class="fa fa-plane fa-fw"></i> <?php echo FLEET; ?></a></li>
 					<li><a href="./index_vam_op.php?page=route_public"><i class="fa fa-globe fa-fw"></i> <?php echo ROUTES; ?></a></li>
