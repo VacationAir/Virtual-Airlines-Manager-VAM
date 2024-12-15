@@ -94,7 +94,7 @@
 			die('There was an error running the query [' . $db->error . ']');
 		}
 		// insert pilot salary in Va finance module
-		$sql = "insert into va_finances (amount,parameter_id,finance_date,gvauser_id,description,report_type,report_id) values ($quantity, '99995',now(),$pilot ,'$fligth_type:$departure - $arrival','$type', '$flight')";
+		$sql = "insert into va_finances (amount,parameter_id,finance_date,gvauser_id,description,report_type,report_id) values (-$quantity, '99995',now(),$pilot ,'$fligth_type:$departure - $arrival','$type', '$flight')";
 		if (!$result = $db->query($sql)) {
 			die('There was an error running the query [' . $db->error . ']');
 		}
