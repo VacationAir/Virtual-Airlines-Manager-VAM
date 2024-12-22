@@ -48,7 +48,7 @@ if (isset($_POST['solicitar_tutoria'])) {
 
 // Procesar la solicitud de examen
 if (isset($_POST['solicitar_examen'])) {
-    $avion_examen = $_POST['avion_examen'];
+    $avion_examen = $_POST['avion_tutoria'];
     $contenido = $_POST['contenido'];
 
     // Consulta para insertar un nuevo examen
@@ -93,8 +93,14 @@ if (isset($_POST['solicitar_examen'])) {
         <label for="hora">Hora:</label>
         <input type="time" id="hora" name="hora" required><br>
 
-        <label for="avion_tutoria">Avión:</label>
-        <input type="text" id="avion_tutoria" name="avion_tutoria" required><br>
+        <label for="avion_tutoria">Selecciona el avión:</label>
+        <select id="avion_tutoria" name="avion_tutoria" required>
+            <option value="B738">B738</option>
+            <option value="A320">A320</option>
+            <option value="ATR72">ATR72</option>
+            <option value="B737">B737</option>
+            <option value="B38M">B38M</option>
+        </select><br>
 
         <label for="comentarios">Comentarios:</label>
         <textarea id="comentarios" name="comentarios"></textarea><br>
@@ -107,8 +113,15 @@ if (isset($_POST['solicitar_examen'])) {
     <!-- Formulario para solicitar examen -->
     <h2>Solicitar Examen</h2>
     <form action="" method="POST">
-        <label for="avion_examen">Avión:</label>
-        <input type="text" id="avion_examen" name="avion_examen" required><br>
+        
+        <label for="avion_tutoria">Selecciona el avión:</label>
+        <select id="avion_tutoria" name="avion_tutoria" required>
+            <option value="B738">B738</option>
+            <option value="A320">A320</option>
+            <option value="ATR72">ATR72</option>
+            <option value="B737">B737</option>
+            <option value="B38M">B38M</option>
+        </select><br>
 
         <label for="contenido">Contenido:</label>
         <textarea id="contenido" name="contenido" required></textarea><br>
