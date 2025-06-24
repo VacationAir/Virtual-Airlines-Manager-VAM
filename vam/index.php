@@ -41,6 +41,7 @@
 	include('./get_va_parameters.php');
 	include('./main_index.php');
 	include('hangar_review.php');
+	include("./get_pilotID_data.php");
 	include('review_reserves.php');
 	$secure = new SECURITY();
 	$secure->parse_incoming();
